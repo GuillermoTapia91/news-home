@@ -95,14 +95,17 @@ section {
   display: flex;
   justify-content: space-between;
   margin-top: 60px;
-  gap: 12px;
   margin-bottom: 40px;
-  flex-wrap: wrap;
+  width: 100%;
 }
 
 .subnews {
   display: flex;
   gap: 20px;
+}
+
+.subnews p {
+  width: 50%;
 }
 @media screen and (max-width: 480px) {
   main {
@@ -142,6 +145,12 @@ section {
   }
 
   section {
-    display: f;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .subnews p {
+    width: 100%;
   }
 }
